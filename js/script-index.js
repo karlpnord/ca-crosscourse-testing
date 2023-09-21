@@ -1,3 +1,5 @@
+import { cartAmount } from "./components/cartAmount.js";
+
 const url = "https://api.noroff.dev/api/v1/gamehub";
 const gameContainer = document.querySelector(".homepage-games__container");
 const errorContainer = document.querySelector(".error");
@@ -39,3 +41,5 @@ function createHtml(games) {
       }
    }
 }
+
+cartAmount();
