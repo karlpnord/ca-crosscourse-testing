@@ -1,0 +1,161 @@
+@import url(/css/variables.css);
+
+.image-item img {
+   max-width: 400px;
+}
+
+label {
+   font-size: 18px;
+}
+
+input {
+   width: 150px;
+   height: 30px;
+}
+
+form label {
+   font-size: 18px;
+}
+
+
+.image-item,
+.form-item {
+   display: none;
+}
+
+.container {
+   display: flex;
+   margin: 80px auto;
+   justify-content: center;
+}
+
+.games-item img {
+   max-width: 100px;
+   margin: auto 0;
+   border-radius: 8px;
+   box-shadow: var(--container-shadow);
+}
+
+.games {
+   margin: 80px auto;
+   display: grid;
+   grid-template-rows: repeat(1, 1fr);
+   max-width: 30em;
+   gap: 2em;
+}
+
+.games-item {
+   padding: 25px;
+   border-radius: 10px;
+   background: #fff;
+   box-shadow: var(--container-shadow);
+   margin: 0 auto;
+   color: #000;
+   width: 90%;
+   display: grid;
+   grid-template-columns: auto auto 1fr;
+   gap: 1.5em;
+}
+
+.vertical-line {
+   border-left: 1px solid black;
+}
+
+.gameinfo {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5em;
+   margin: auto 0;
+}
+
+.cta-black {
+   padding: 7.5px 15px;
+   min-width: 70px;
+   max-width: 100px;
+}
+
+.gameinfo h2 {
+   font-family: var(--ff-toko);
+   letter-spacing: 1px;
+   font-size: 1.75em;
+   text-transform: uppercase;
+}
+
+.gameinfo h3 {
+   margin-bottom: 5px;
+   font-size: 0.9em;
+}
+
+.gameinfo h4 {
+   font-size: 1.25em;
+}
+
+@media (min-width: 1000px) {
+   .games {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(5, auto);
+      max-width: 60em;
+      grid-row-gap: 4em;
+   }
+}
+
+@media (min-width: 1300px) {
+   .image-item,
+   .form-item {
+      display: initial;
+   }
+
+   .form-item {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .container {
+      align-items: flex-end;
+      justify-content: space-between;
+      margin: 6em 5em;
+   }
+
+   .horizontal-line {
+      border-bottom: 3px solid #000;
+      margin: 0 5em;
+      border-radius: 4px;
+      box-shadow: var(--container-shadow);
+   }
+
+   .games {
+      max-width: 75em;
+      grid-column-gap: 5em;
+   }
+
+   .games-item {
+      width: 36em;
+      gap: 2em;
+   }
+
+   .games-item img {
+      max-width: 180px;
+   }
+
+   .gameinfo {
+      gap: 1em;
+    }
+
+   .gameinfo h2 {
+      font-size: 2.25em;
+   }
+   
+   .gameinfo h3 {
+      font-size: 1.25em;
+   }
+   
+   .gameinfo h4 {
+      font-size: 1.75em;
+   }
+
+   .cta-black {
+      max-width: 150px;
+      padding: 10px 0;
+      font-size: 1.25em;
+   }
+}

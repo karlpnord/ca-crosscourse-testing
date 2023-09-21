@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The contact page is where users can get in touch with the GameHub team regarding any queries, concerns or feedback they may have while using the platform.">
+    <title>GameHub | Contact us</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/styles-contact.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/801ba823f5.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="menu-checkbox">
+      <label for="menu-checkbox"><i class="fas fa-bars"></i></label>
+      <h2>GameHub</h2>
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games-page.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active-page">Contact</a></li>
+         </ul>
+      </nav>
+      <div class="shopping-cart">
+        <a href="cart-summary.html" aria-label="cart link"><i class="fa-solid fa-bag-shopping"></i></a>
+        <div class="shopping-cart-amount"></div>
+      </div>
+    </header>
+    <main>
+      <section class="grid-item1 secondary-nav">
+        <a href="index.html">
+          <i class="fa-solid fa-xmark"></i>
+          <h1>Contact</h1>
+        </a>
+      </section>
+      <div class="grid-container">
+        <section class="personal-details container__item">
+          <h2>Personal Info</h2>
+          <form class="form-pdetails">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="E-mail">
+          </form>
+          <div class="image-item">
+            <img src="/images/gamehublogo.png" alt="Gamehub logo">
+          </div>
+        </section>
+        <section class="message-details container__item">
+          <h2>Your Message</h2>
+          <form>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your issue or ask us a question!"></textarea>
+          </form>
+          <p>Or send us an email at: <span class="line-break">gamehub@gmail.com</span></p>
+          <p>Or call us at: <span class="line-break">+47 999 99 999</span></p>
+          <a href="contact-success.html" class="cta-purple cta">Submit Form</a>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 GameHub</p>
+      <p>Online Game Provider</p>
+    </footer>
+  </body>
+</html>
